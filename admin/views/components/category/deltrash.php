@@ -1,0 +1,9 @@
+<?php 
+	$category=loadModel('category');
+	$id=$_REQUEST['id'];	
+	$category->category_deltrash($id);
+	//header('location:index.php?option=category');
+ ?>
+ <script>
+ 	document.location='index.php?option=category';
+ </script>

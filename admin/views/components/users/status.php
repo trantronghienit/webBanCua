@@ -1,0 +1,10 @@
+<?php 
+	$users=loadModel('users');
+	$id=$_REQUEST['id'];
+	$row=$users->users_detail($id);
+	$status=($row['status']==1)?0:1;
+	$users->users_status($status,$id);
+ ?>
+ <script>
+ 	document.location='index.php?option=users';
+ </script>

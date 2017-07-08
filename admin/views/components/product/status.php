@@ -1,0 +1,10 @@
+<?php 
+	$product=loadModel('product');
+	$id=$_REQUEST['id'];
+	$row=$product->product_detail($id);
+	$status=($row['status']==1)?0:1;
+	$product->product_status($status,$id);
+ ?>
+ <script>
+ 	document.location='index.php?option=product';
+ </script>

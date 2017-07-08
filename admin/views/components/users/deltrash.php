@@ -1,0 +1,9 @@
+<?php 
+	$users=loadModel('users');
+	$id=$_REQUEST['id'];	
+	$users->users_deltrash($id);
+	//header('location:index.php?option=users');
+ ?>
+ <script>
+ 	document.location='index.php?option=users';
+ </script>

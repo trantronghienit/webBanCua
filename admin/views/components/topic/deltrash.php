@@ -1,0 +1,9 @@
+<?php 
+	$topic=loadModel('topic');
+	$id=$_REQUEST['id'];	
+	$topic->topic_deltrash($id);
+	//header('location:index.php?option=topic');
+ ?>
+ <script>
+ 	document.location='index.php?option=topic';
+ </script>

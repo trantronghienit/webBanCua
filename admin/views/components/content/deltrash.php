@@ -1,0 +1,9 @@
+<?php 
+	$content=loadModel('content');
+	$id=$_REQUEST['id'];	
+	$content->content_deltrash($id);
+	//header('location:index.php?option=content');
+ ?>
+ <script>
+ 	document.location='index.php?option=content';
+ </script>

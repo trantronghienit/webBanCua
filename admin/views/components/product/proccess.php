@@ -1,0 +1,67 @@
+<?php
+$product=loadModel('product');
+$myclass=loadClass('myclass');
+$author=(isset($_SESSION['id']))?$_SESSION['id']:1;
+if(isset($_POST['THEM']))
+{
+	$data=array(
+		'name'=>$_POST['name'],
+		'alias'=>$myclass->str_alias($_POST['name']),
+		'catid'=>$_POST['catid'],
+		'metakey'=>$_POST['metakey'],
+		'metadesc'=>$_POST['metadesc'],
+		'detail'=>$_POST['detail'],
+		'number'=>$_POST['number'],
+		'price_buy'=>$_POST['price_buy'],
+		'price_sale'=>$_POST['price_sale'],
+		'status'=>$_POST['status'],
+		'trash'=>1,
+		'number_buy'=>0,
+		'access'=>1,
+		'created_at'=>$myclass->ngayhientai(),
+		'created_by'=>$author,
+		'updated_at'=>$myclass->ngayhientai(),
+		'updated_by'=>$author
+	);
+	$name_img=$_FILES["img"]['name'];
+	$temp_img=$_FILES["img"]['tmp_name'];
+	$data['img']=$name_img;
+	move_uploaded_file($temp_img,"../public/imgs/product/".$name_img);
+	$product->product_insert($data);
+}
+if(isset($_POST['CAPNHAT']))
+{
+	$id=$_REQUEST['id'];
+	$data=array(
+		'name'=>$_POST['name'],
+		'alias'=>$myclass->str_alias($_POST['name']),
+		'catid'=>$_POST['catid'],
+		'metakey'=>$_POST['metakey'],
+		'metadesc'=>$_POST['metadesc'],
+		'detail'=>$_POST['detail'],
+		'number'=>$_POST['number'],
+		'price_buy'=>$_POST['price_buy'],
+		'price_sale'=>$_POST['price_sale'],
+		'status'=>$_POST['status'],
+		'updated_at'=>$myclass->ngayhientai(),
+		'updated_by'=>$author
+	);
+	if (strlen($_FILES["img"]['name'])) {
+		$id=$_REQUEST['id'];	
+		$row=$product->product_detail($id);
+		$hinh="../public/imgs/product".$row['img'];
+		if (file_exists($hinh)) {
+			unlink($hinh);
+		}
+		$name_img=$_FILES["img"]['name'];
+		$temp_img=$_FILES["img"]['tmp_name'];
+		$data['img']=$name_img;
+		move_uploaded_file($temp_img,"../public/imgs/product/".$name_img);
+	}
+	
+	$product->product_update($data,$id);
+}
+?>
+ <script>
+ 	document.location='index.php?option=product';
+ </script>

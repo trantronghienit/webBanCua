@@ -1,0 +1,49 @@
+<?php
+$category=loadModel('category');
+$myclass=loadClass('myclass');
+$author=(isset($_SESSION['id']))?$_SESSION['id']:1;
+if(isset($_POST['THEM']))
+{
+	$data=array(
+		'name'=>$_POST['name'],
+		'link'=>$myclass->str_alias($_POST['name']),
+		'parentid'=>$_POST['parentid'],
+		'metakey'=>$_POST['metakey'],
+		'metadesc'=>$_POST['metadesc'],
+		'orders'=>($_POST['orders']+1),
+		'status'=>$_POST['status'],
+		'trash'=>1,
+		'access'=>1,
+		'created_at'=>$myclass->ngayhientai(),
+		'created_by'=>$author,
+		'updated_at'=>$myclass->ngayhientai(),
+		'updated_by'=>$author
+
+	);
+	$category->category_insert($data);
+}
+if(isset($_POST['CAPNHAT']))
+{
+	$id=$_REQUEST['id'];
+	$data=array(
+		'name'=>$_POST['name'],
+		'link'=>$myclass->str_alias($_POST['name']),
+		'parentid'=>$_POST['parentid'],
+		'metakey'=>$_POST['metakey'],
+		'metadesc'=>$_POST['metadesc'],
+		'orders'=>($_POST['orders']+1),
+		'status'=>$_POST['status'],
+		'trash'=>1,
+		'access'=>1,
+		'created_at'=>$myclass->ngayhientai(),
+		'created_by'=>$author,
+		'updated_at'=>$myclass->ngayhientai(),
+		'updated_by'=>$author
+
+	);
+	$category->category_update($data,$id);
+}
+?>
+ <script>
+ 	document.location='index.php?option=category';
+ </script>
