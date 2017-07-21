@@ -1,19 +1,4 @@
-<div class="toplink">
-	<div class="container">
-		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-			<div class="toplink-left pull-left">
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-			<div class="toplink-right pull-right">
-				<ul class="breadcrumb">
-					<li><a href="index.php">Trang chủ</a></li>
-					<li class="active">Hình thức thanh toán</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
+
 <div class="container">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<p style="text-align: center;"><span style="font-size:20px;"><img src="public/imgs/ck.jpg" style="width: 800px; height: 714px;"></span></p>

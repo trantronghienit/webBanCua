@@ -12,14 +12,7 @@ $list=$content->content_tintuc($catid,$first, $limit);
 $string=loadClass('string');
 ?>
 <div id="site-content">
-<!-- <div class="toplink">
-	<div class="container">
-		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-			<div class="toplink-left pull-left">
-			</div>
-		</div>
-	</div>
-</div> -->
+
 <div class="container">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	<?php foreach ($list as $row):?>

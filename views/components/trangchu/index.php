@@ -4,7 +4,7 @@
    $listproductbuy = $product->product_home_buy(4);
    ?>
 <div class="topitems">
-   <div class="container">
+  
       <!-- chưa chỉnh lại a href="index.php?option=sanpham -->
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
          <div class="grid" id="grid-small">
@@ -96,8 +96,6 @@
             </figure>
          </div>
       </div>
-   </div>
-</div>
 </div>
 <!--TOP ITEMS END-->
 <!--NEW ITEMS BEGIN-->
