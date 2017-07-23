@@ -19,15 +19,9 @@
    $total=$product->product_category_count($catlist);
    $list=$product->product_category($catlist,$first,$limit);
    ?>
-<div id="site-content">
+
    <div class="container">
-      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-         <div class="left-side">
-            <div id="collection-filters-container"></div>
-            <?php loadModel('Category')?>
-         </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+     
          <div class="right-side rscollectionpage">
             <?php foreach ($list as $row): ?>
             <form action="" method="post">
@@ -78,6 +72,5 @@
          <ul class="pagination">
             <?php echo $phantrang->PagePer($total,$current,$limit,$url='sanpham');?>
          </ul>
-      </div>
+     
    </div>
-</div>
