@@ -125,14 +125,14 @@
                ?>
             <form action="/cart/add" method="post">
                <div class="newitemscontent col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                  <div class="grid spbanchay">
+                   <div class="grid spbanchay">
                      <figure class="effect-hera banchay">
                         <a href="index.php?option=sanpham&id=<?php
                            echo $row['alias'];
                            ?>">
                         <img src="public/imgs/product/<?php
                            echo $row['img'];
-                           ?>" alt="<?php
+                           ?>" class="img-responsive" alt="<?php
                            echo $row['name'];
                            ?>">
                         </a>
@@ -145,10 +145,10 @@
                               echo $row['name'];
                               ?></a>
                         </div>
-                        <div class="productprice">
-                           <a class="price" href=""><?php
-                              echo number_format($row['price_buy']);
-                              ?>vnđ</a>
+                        <p>&nbsp;Cửa sổ 2 cánh mở quay Hệ cửa: cửa sổ mở quay Cửa sổ 2 cánh mở quay Kính suốt […]</p>
+                        <div class="add-to-cart muahang col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                           <button class="addtocart btn btn-info btn-lg hvr-sweep-to-right mhproduct" type="submit" id="button-cart">
+                           <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Chi Tiết</button>
                         </div>
                      </div>
                   </div>
@@ -171,34 +171,10 @@
                            ?>">
                         <img src="public/imgs/product/<?php
                            echo $row['img'];
-                           ?>" class="midheight img-responsive" alt="<?php
+                           ?>" class="img-responsive" alt="<?php
                            echo $row['name'];
                            ?>">
                         </a>
-                        <figcaption>
-                           <h2 class="left"><span>MỚI</span></h2>
-                           <div class="productselect" style="display:none">
-                              <input type="hidden" name="variantId" value="2109683">
-                           </div>
-                           <!--  số lượng -->
-                           <div class="soluong" style="display:none">
-                              <label>Số lượng</label>
-                              <div class="input-group quantity">
-                                 <span class="input-group-btn">
-                                 <a id="q_down" class="btn btn-default" type="button">-</a>
-                                 </span>
-                                 <input type="text" class="form-control" name="quantity" id="quantity_wanted" size="2" value="1">
-                                 <span class="input-group-btn">
-                                 <a id="q_up" class="btn btn-default" type="button">+</a>
-                                 </span>
-                              </div>
-                           </div>
-                           <p> 
-                              <button class="aeffects  add-to-cart" type="submit" id="button-cart">
-                              <span class="glyphicon glyphicon-shopping-cart"></span></button>    
-                              <a href=""><i class="fa fa-external-link"></i></a>
-                           </p>
-                        </figcaption>
                      </figure>
                      <div class="itemdetail itemfotter">
                         <div class="itemdetailtitle">
@@ -208,10 +184,10 @@
                               echo $row['name'];
                               ?></a>
                         </div>
-                        <div class="productprice">
-                           <a class="price" href=""><?php
-                              echo number_format($row['price_buy']);
-                              ?>vnđ</a>
+                        <p>&nbsp;Cửa sổ 2 cánh mở quay Hệ cửa: cửa sổ mở quay Cửa sổ 2 cánh mở quay Kính suốt […]</p>
+                        <div class="add-to-cart muahang col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                           <button class="addtocart btn btn-info btn-lg hvr-sweep-to-right mhproduct" type="submit" id="button-cart">
+                           <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Chi Tiết</button>
                         </div>
                      </div>
                   </div>
@@ -234,34 +210,10 @@
                            ?>">
                         <img src="public/imgs/product/<?php
                            echo $row['img'];
-                           ?>" class="midheight img-responsive" alt="<?php
+                           ?>" class="img-responsive" alt="<?php
                            echo $row['name'];
                            ?>">
                         </a>
-                        <figcaption>
-                           <h2 class="left"><span>MỚI</span></h2>
-                           <div class="productselect" style="display:none">
-                              <input type="hidden" name="variantId" value="2090339">
-                           </div>
-                           <!--số lượng-->
-                           <div class="soluong" style="display:none">
-                              <label>Số lượng</label>
-                              <div class="input-group quantity">
-                                 <span class="input-group-btn">
-                                 <a id="q_down" class="btn btn-default" type="button">-</a>
-                                 </span>
-                                 <input type="text" class="form-control" name="quantity" id="quantity_wanted" size="2" value="1">
-                                 <span class="input-group-btn">
-                                 <a id="q_up" class="btn btn-default" type="button">+</a>
-                                 </span>
-                              </div>
-                           </div>
-                           <p> 
-                              <button class="aeffects  add-to-cart" type="submit" id="button-cart">
-                              <span class="glyphicon glyphicon-shopping-cart"></span></button>    
-                              <a href=""><i class="fa fa-external-link"></i></a>
-                           </p>
-                        </figcaption>
                      </figure>
                      <div class="itemdetail itemfotter">
                         <div class="itemdetailtitle">
@@ -271,10 +223,10 @@
                               echo $row['name'];
                               ?></a>
                         </div>
-                        <div class="productprice">
-                           <a class="price" href=""><?php
-                              echo number_format($row['price_buy']);
-                              ?>vnđ</a>
+                        <p>&nbsp;Cửa sổ 2 cánh mở quay Hệ cửa: cửa sổ mở quay Cửa sổ 2 cánh mở quay Kính suốt […]</p>
+                        <div class="add-to-cart muahang col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                           <button class="addtocart btn btn-info btn-lg hvr-sweep-to-right mhproduct" type="submit" id="button-cart">
+                           <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Chi Tiết</button>
                         </div>
                      </div>
                   </div>
