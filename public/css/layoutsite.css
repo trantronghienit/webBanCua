@@ -337,21 +337,12 @@ ul.newitemstag .active a {
 .navbar-default .navbar-toggle:focus > span.icon-bar {
     background-color: #325baa !important;
 }
-/*.navbar-default .navbar-nav > li > a:hover{
-        color: blue;
-    background: white;
-   }
-.navbar-default .navbar-nav li> ul >li> a:hover{
-         color: blue;
-         background: white;
-        
-}*/
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    border-top: 2px solid #325baa;
-    background-color: #fff;
+
+ul.dropdown-menu.normal > li:hover>a,
+ul.dropdown-menu.normal > li:hover>a:focus,
+ul.dropdown-menu.normal > li:hover>a:hover {
+    color: #333;
+    background-color: transparent;
 }
 .dropdown.yamm-fw.open ul li a:hover {
     color: #325baa !important;
@@ -379,7 +370,7 @@ ul.newitemstag .active a {
 }
 .pos-fixed750 {
 position: fixed !important;
-margin-top:-210px;
+margin-top:-181px;
 
 }
 .pos-fixed425{
@@ -408,15 +399,15 @@ li.dropdown.yamm-fw:hover>a,
 li.dropdown.yamm-fw:hover>a:focus,
 li.dropdown.yamm-fw:hover>a:hover {
     background-color: blue;
-    border-top: 2px solid #325baa;
-    border-bottom: 2px solid #fff;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
 }
 li.dropdown.yamm-fw:active>a,
 li.dropdown.yamm-fw:hover>a {
     background-image: none !important;
     box-shadow: none !important;
-    border-top: 2px solid #325baa;
-    border-bottom: 2px solid #fff;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
 }
 .menu .navbar-default .navbar-nav a,
 .navbar-default .navbar-nav>a:focus,
@@ -484,7 +475,7 @@ button.btn.btn-default {
     width: 100%;
     display: inline-block;
     float: left;
-    padding: 0px 10px;
+    padding: 25px 0px;
 }
 .onlytablet {
     display: none;
@@ -605,6 +596,9 @@ button.btn.btn-default {
         font-size: 13px;
         line-height: 34px;
         z-index: 100;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffF;
     }
     .top1 {  
         position: fixed !important;
@@ -886,7 +880,7 @@ img.article-image {
 }
 ul.nav.navbar-nav a {
     font-family: Arial,sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 ul.list-group.newitemstag a {
@@ -2574,11 +2568,6 @@ span.shoppingcart-bag {
     background-position: top right;
     margin-right: 15px;
 }
-button.aeffects {
-    background: none;
-    border: none;
-    box-shadow: none;
-}
 /*=============progress=====================*/
 
 #progress {
@@ -3197,19 +3186,6 @@ table#order_details tfoot {
     font-size: 0;
     opacity: 0;
 }
-.grid figure h2 {
-    font-weight: 300;
-    font-family:Arial,sans-serif;
-    font-size: 30px;
-    text-transform: uppercase
-}
-.grid figure h2 span {
-    font-weight: normal;
-    font-family: Arial,sans-serif;
-    text-transform: uppercase;
-            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-}
-.grid figure h2,
 .grid figure p {
     margin: 0;
 }
@@ -3218,7 +3194,6 @@ table#order_details tfoot {
     font-size: 18px;
     font-family:Arial,sans-serif;
 }
-.grid figure h2,
 .grid figure .btnxemngay {
     margin: 0;
 }
@@ -3482,9 +3457,6 @@ figure.effect-apollo:hover p {
     overflow: hidden;
     margin-bottom: 15px;
 }
-figure.effect-hera {
-    background: #fff;
-}
 figure.effect-hera.banchay {
     margin-bottom: 15px;
     position: relative;
@@ -3498,11 +3470,7 @@ figure.effect-hera.banchay img {
     width: 100%;
     height: 288px;
 }
-figure.effect-hera.banchay:hover img {
-    opacity: 0.5;
-}
-figure.effect-hera h2.right,
-figure.effect-hera h2.left {
+figure.effect-hera h2.right{
     font-size: 65%;
 }
 figure.effect-hera h2.right {
@@ -3519,34 +3487,8 @@ figure.effect-hera h2.right {
     -moz-transform: rotate(45deg);
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=5);
     -o-transform: rotate(45deg);
-    /*
-    -webkit-transform: translate3d(-50%,-50%,0);
-    transform: translate3d(-50%,-50%,0);
-    -webkit-transform-origin: 50%;
-    transform-origin: 50%;*/
 }
-figure.effect-hera h2.left {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    left: 10%;
-    top: 8%;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    background: #666;
-    padding: 10px 0px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=5);
-    -o-transform: rotate(45deg);
-    /*
-    -webkit-transform: translate3d(-50%,-50%,0);
-    transform: translate3d(-50%,-50%,0);
-    -webkit-transform-origin: 50%;
-    transform-origin: 50%;*/
-}
-.grid figure h2.right span,
-.grid figure h2.left span {
+.grid figure h2.right span {
     font-weight: normal;
     font-family: Arial,sans-serif;
     text-transform: uppercase;
@@ -3587,39 +3529,6 @@ figure.effect-hera figcaption::before {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.03);
 }
-figure.effect-hera p {
-    width: 100px;
-    text-transform: none;
-    font-size: 121%;
-    line-height: 2;
-}
-figure.effect-hera p a,
-figure.effect-hera p .aeffects {
-    color: #325baa;
-}
-figure.effect-hera p a:hover,
-figure.effect-hera p a:focus,
-figure.effect-hera p a i:hover,
-figure.effect-hera p a i:focus {
-    opacity: 1 !important;
-}
-figure.effect-hera p a i {
-    font-size: 20px;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-}
-figure.effect-hera p .aeffects:hover {
-    opacity: 1 !important;
-}
-figure.effect-hera p .aeffects {
-    opacity: 0;
-    width: 20px;
-    height: 30px;
-    overflow: hidden;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-}
 figure.effect-hera:hover figcaption {
     background: rgba(255, 255, 255, 0.5);
 }
@@ -3628,18 +3537,10 @@ figure.effect-hera:hover figcaption::before {
     -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg) scale3d(1, 1, 1);
     transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 0.1, -45deg) scale3d(1, 1, 1);
 }
-figure.effect-hera:hover h2.right,
-figure.effect-hera:hover h2.left {
+figure.effect-hera:hover h2.right,{
     opacity: 0;
 }
 figure.effect-hera:hover p i:empty {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    /* just because it's stronger than nth-child */
-    
-    opacity: 0.7;
-}
-figure.effect-hera:hover p .aeffects {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     /* just because it's stronger than nth-child */
@@ -3653,9 +3554,6 @@ figure.effect-hera:hover p .aeffects {
     /*height: 330px;*/
     
     margin-bottom: 30px;
-}
-figure.effect-hera.banchay.prodpage {
-    /*height: 250px;*/
 }
 .itemdetailtitle.listpage a {
     font-size: 18px;
@@ -4774,6 +4672,7 @@ ul.list-collections em i{
 
 #etalage{
     display: none;
+    width: 100%;
 }
 
 /* Large thumbnail: */
