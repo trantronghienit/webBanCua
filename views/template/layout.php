@@ -17,14 +17,18 @@
    <div id="wapper">
       <div class="fluid1">
       <div id="site-header">
-         <div class="top1">
+         <div class="top1" id="menutop">
                   <?php loadModules('menutop');?>
          </div>
          <!-- main header -->
          <div class="container header">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <div class="col-md-4">
                   <?php loadModules('logo');?>
+               </div>
+                <div class="col-md-8">
                   <?php loadModules('slidetext');?>
+               </div>
             </div>
          </div>
       </div>
@@ -33,34 +37,39 @@
       <div class="menu">
       <div class="fluid1">
             <nav class="navbar navbar-default yamm">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
                <div class="navbar-header">
                   <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a href="" class="navbar-brand">Cửa Nhựa Lõi Thép Cao Cấp</a>
+                  <a href="" class="navbar-brand"><p style="font-size: 14px; color: white;">CỬA NHỰA LỖI THÉP CAO CẤP</p></a>
                </div>
-               <div id="navbar-collapse-grid" class="navbar-collapse collapse">
-                  <?php loadModules('mainmenu');?>
+               </div>
+               <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+                  <div id="navbar-collapse-grid" class="navbar-collapse collapse">
+                     <?php loadModules('mainmenu');?>
+                  </div>
                </div>
             </nav>
             </div>
       </div>
        <!-- /Navigation menu -->
       <div id="site-content">
-            <div class="row"> 
-            <?php loadModules('Slideshow');?>
-         
-             <div  style="padding-top: 15px;">
+            <div class="container">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"  style="padding-top: 30px;">
+               <?php loadModules('Slideshow');?>
+               </div>
+            </div>
+             <div  class="container" style="padding-top: 15px;">
             <?php loadComponent();?>
                
             </div>
-         </div>
          <div class="clean"></div>
          <!-- footer -->
          <div class="footer"> 
-           <div class="row">
+           <div class="container">
            
                <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 ">
                   <?php loadModules('footer-diachi');?>

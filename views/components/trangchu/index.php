@@ -4,7 +4,6 @@
    $listproductbuy = $product->product_home_buy(4);
    ?>
 <div class="topitems">
-  
       <!-- chưa chỉnh lại a href="index.php?option=sanpham -->
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
          <div class="grid" id="grid-small">
@@ -100,7 +99,7 @@
 <!--TOP ITEMS END-->
 <!--NEW ITEMS BEGIN-->
 <div class="newitems">
-   <div class="container">
+  
       <div class="tieudengang tieudespm col-xs-12 col-sm-12 col-md-12 col-lg-12">
          <a class="newitems_title" href="#">SẢN PHẦM MỚI</a>
          <br>
@@ -125,7 +124,7 @@
                foreach ($listproductnew as $row):
                ?>
             <form action="/cart/add" method="post">
-               <div class="newitemscontent col-xs-12 col-sm-6 col-md-3 col-lg-3">
+               <div class="newitemscontent col-xs-12 col-sm-6 col-md-4 col-lg-4">
                   <div class="grid spbanchay">
                      <figure class="effect-hera banchay">
                         <a href="index.php?option=sanpham&id=<?php
@@ -164,7 +163,7 @@
                foreach ($listproductnew as $row):
                ?>       
             <form action="/cart/add" method="post">
-               <div class="newitemscontent col-xs-12 col-sm-6 col-md-3 col-lg-3">
+               <div class="newitemscontent col-xs-12 col-sm-6 col-md-4 col-lg-4">
                   <div class="grid spbanchay">
                      <figure class="effect-hera banchay">
                         <a href="index.php?option=sanpham&id=<?php
@@ -227,7 +226,7 @@
                foreach ($listproductnew as $row):
                ?> 
             <form action="/cart/add" method="post">
-               <div class="newitemscontent col-xs-12 col-sm-6 col-md-3 col-lg-3">
+               <div class="newitemscontent col-xs-12 col-sm-6 col-md-4 col-lg-4">
                   <div class="grid spbanchay">
                      <figure class="effect-hera banchay">
                         <a href="index.php?option=sanpham&id=<?php
@@ -286,6 +285,6 @@
                ?> 
          </div>
       </div>
-   </div>
+  
    <div class="clean"></div>
 </div>
